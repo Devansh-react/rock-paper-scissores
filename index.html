@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>roack paper scissior</title>
+   <link rel="stylesheet" href="rock_paper_scissor.css">
+</head>
+
+<body>
+   <h2 class="title">Rock_paper_scissor</h2>
+   <button onclick="
+    playermove('rock')
+    "><img src="./rock.png" alt="rock" srcset=""></button>
+
+   <button onclick="
+   playermove('paper')
+    "><img src="./paper.png" alt="" srcset=""></button>
+   
+   
+   <button onclick="
+   playermove('scissor')
+    "><img src="./scissor.png" alt="" class="s"></button>
+
+    <p class="gameresult"></p>
+    <p class="uncmove"></p>
+    <p class="scoreboard"></p>
+
+    <button onclick="
+    score.win=0
+    score.looses=0
+    score.ties=0
+    update_scoreboard()
+    " class="Resetbtn">Reset Score</button>
+    <button onclick="autoplay()  " class="autoplaybtn">Auto play</button>
+
+ <script src="rock_paper_scissor.js"></script>
+</body> 
+  
+   
+
+</html>
